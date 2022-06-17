@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+message User {
+    uint32 id = 1;
+    string name = 2;
+    string email = 3;
+    enum UserType {
+        A = 0;
+        B = 1;
+        C = 2;
+    }
+    UserType user_type = 4;
+}
+
+message UserRequest {
+    uint32 id = 1;
+}
+
+message UserResponse {
+    bool error = 1;
+    string message = 2;
+    User user = 3;
+}
+
+service UserManager {
+    rpc get (UserRequest) returns (UserResponse) {}
+}

@@ -1,0 +1,20 @@
+{
+	"1": {
+		"id": 1,
+		"name": "usera",
+		"email": "usera@example.com",
+		"user_type": "A"
+	},
+	"2": {
+		"id": 2,
+		"name": "userb",
+		"email": "userb@example.com",
+		"user_type": "B"
+	},
+	"3": {
+		"id": 3,
+		"name": "userc",
+		"email": "userc@example.com",
+		"user_type": "C"
+	}
+}
